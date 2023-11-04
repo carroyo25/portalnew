@@ -1,0 +1,1 @@
+const URLactual = window.location.href;  
