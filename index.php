@@ -28,13 +28,13 @@
                 <h1 class="login_title">Bienvenido</h1>
                 <form action="">
                 <div class="group">      
-                        <input type="text" id="user_login" name="user_login" class="login_input" required >
+                        <input type="text" id="user_login" name="user_login" class="login_input" required  value="caarroyo">
                         <span class="highlight"></span>
                         <span class="bar"></span>
                         <label class="place_label">Nombre</label>
                     </div>
                     <div class="group">      
-                        <input type="password" id="user_password" name="user_password" class="login_input" required autocomplete>
+                        <input type="password" id="user_password" name="user_password" class="login_input" required autocomplete value="ghostman2502">
                         <span class="highlight"></span>
                         <span class="bar"></span>
                         <label class="place_label">Contraseña</label>

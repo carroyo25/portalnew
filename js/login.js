@@ -25,6 +25,28 @@
         try {
             if ($user_login.value === "") throw new Error("Ingrese su usuario");
             if ($user_password.value === "") throw new Error("Ingrese su Clave");
+
+            const formData = new FormData();
+            formData.append('funcion','login');
+            formData.append('username', $user_login.value);
+            formData.append('password', $user_password.value);
+
+            fetch ('inc/login.inc.php',{
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.respuesta) {
+                    window.location = data.pagina;
+                }else{
+                    mostrarMensaje(data.mensaje,data.clase);
+                    window.location = data.pagina;
+                }
+            })
+            .catch(error => {
+                console.error(error);
+            })
         } catch (error) {
             mostrarMensaje(error,"msj_error");
         }

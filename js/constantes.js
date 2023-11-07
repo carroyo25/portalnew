@@ -1,1 +1,2 @@
-const URLactual = window.location.href;  
+const URLactual = window.location.href;
+const regex = /^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@(?:[^<>()[\].,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,63}$/i; 
