@@ -13,7 +13,7 @@
 
 </head>
 <body>
-<div class="modal_mensaje" id="mensaje__sistema">
+    <div class="modal_mensaje" id="mensaje__sistema">
         <span id="mensaje_texto" class="span_mensaje"></span>
     </div>
     <div class="wrap">
@@ -30,13 +30,13 @@
                 <h1 class="login_title">Registro</h1>
                 <form action="">
                     <div class="group">      
-                        <input type="text" id="user_mail" name="user_mail" class="login_input" required value="caarroyo@hotmail.com">
+                        <input type="text" id="user_mail" name="user_mail" class="login_input" required>
                         <span class="highlight"></span>
                         <span class="bar"></span>
                         <label class="place_label">Correo Electrónico</label>
                     </div>
                     <div class="group">      
-                        <input type="text" id="user_code" name="user_code" class="login_input" required autocomplete value="006071">
+                        <input type="text" id="user_code" name="user_code" class="login_input" required autocomplete>
                         <span class="highlight"></span>
                         <span class="bar"></span>
                         <label class="place_label">Codigo Trabajador</label>

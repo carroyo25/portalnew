@@ -191,6 +191,23 @@
                 margin-bottom: 20px;   
             }
 
+            .login_actions{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+
+                .login_link {
+                    border: 2px solid transparent;
+                    transition: all 0.5s;
+                    padding: 10px;
+
+                    &:hover{
+                        border: 2px solid #005B86;
+                        color:#005B86;
+                    }
+                }
+            }
+
             .button_login{
                 color: #fff;
                 font-size: 20px;
@@ -214,6 +231,18 @@
                     text-shadow: 1px 1px 3px #fff;
                 }
             }
+
+            #password_force{
+                border: 1px solid #c2c2c2;
+                height: 3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 2rem;
+                /*background-image: linear-gradient(-45deg,#fa8888,#ff0062); */
+                background-size: 200% 200%;
+                animation: gradient 3s ease infinite;
+            }
         }
     }
 
@@ -226,4 +255,30 @@
         font-family: 'Cabin';
     }
 }
+
+.mensajes_portal{
+    .cuerpo_mensaje{
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+.password_without{
+    background: linear-gradient(45deg, transparent, white);
+}
+
+@keyframes gradient { 
+    0% { 
+       background-position: 0% 100%;
+    }
+
+    50% { 
+       background-position: 100% 50%;
+    }
+
+    100% { 
+       background-position: 0% 50%;
+    } 
+}
+
 

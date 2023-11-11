@@ -38,10 +38,9 @@
             .then(response => response.json())
             .then(data => {
                 if (data.respuesta) {
-                    window.location = data.pagina;
+                    window.location = "php/panel.php";
                 }else{
                     mostrarMensaje(data.mensaje,data.clase);
-                    window.location = data.pagina;
                 }
             })
             .catch(error => {

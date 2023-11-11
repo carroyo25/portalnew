@@ -25,16 +25,16 @@
         </div>
         <div class="wrap_body">
             <div class="login_container">
-                <h1 class="login_title">Bienvenido</h1>
+                <h1 class="login_title">Iniciar Sesion</h1>
                 <form action="">
                 <div class="group">      
-                        <input type="text" id="user_login" name="user_login" class="login_input" required  value="caarroyo">
+                        <input type="text" id="user_login" name="user_login" class="login_input" required>
                         <span class="highlight"></span>
                         <span class="bar"></span>
                         <label class="place_label">Nombre</label>
                     </div>
                     <div class="group">      
-                        <input type="password" id="user_password" name="user_password" class="login_input" required autocomplete value="ghostman2502">
+                        <input type="password" id="user_password" name="user_password" class="login_input" required autocomplete>
                         <span class="highlight"></span>
                         <span class="bar"></span>
                         <label class="place_label">Contraseña</label>
@@ -42,8 +42,9 @@
                             <img src="img/eye-closed-svgrepo-com.svg" class="icon_img" id="eye_icon">
                         </a>
                     </div>
-                    <div>
-                        <a href="#" class="login_link">¿Olvidates tu contraseña?</a>
+                    <div class="login_actions">
+                        <a href="php/changepass.php" class="login_link">¿Olvidaste tu contraseña?</a>
+                        <a href="php/register.php" class="login_link">Registrarse</a>
                     </div>
                     <button id="boton_login" class="button_login">Ingresar</button>
                 </form>
