@@ -23,11 +23,21 @@
                     <p>Procesos</p>
                     </br>
                     <div id="acordeon">
-                        <div class="link"><a href="#" class="enlace_opcion"><img src="../img/document.svg" class="icono_anterior"> Gestión de Documentos</a><img src="../img/caret-down.svg" class="link_arrow"></div>
-                        <div class="link"><a href="#" class="enlace_opcion"><img src="../img/service.svg" class="icono_anterior"> Bienestar Social</a><img src="../img/caret-down.svg" class="link_arrow"></div>
-                        <div class="link"><a href="#" class="enlace_opcion"><img src="../img/book.svg" class="icono_anterior"> Reglamentos</a><img src="../img/caret-down.svg" class="link_arrow"></div>
-                        <div class="link"><a href="#" class="enlace_opcion"><img src="../img/laws.svg" class="icono_anterior"> Otras Normas y Disposiciones</a><img src="../img/caret-down.svg" class="link_arrow"></div>
-                        <div class="link"><a href="#" class="enlace_opcion"><img src="../img/academic.svg" class="icono_anterior"> Capacitación</a><img src="../img/caret-down.svg" class="link_arrow"></div>
+                        <div class="link" >
+                            <a href="0" class="enlace_opcion"><img src="../img/document.svg" class="icono_anterior"> Gestión de Documentos</a><img src="../img/caret-down.svg" class="link_arrow">
+                            <ul class="submenu">
+                                <li><a href="#" class="submenu_opcion">Boletas de Pago</a></li>
+                                <li><a href="#" class="submenu_opcion">Certificados de Trabajo</a></li>
+                                <li><a href="#" class="submenu_opcion">Constancia de CTS</a></li>
+                                <li><a href="#" class="submenu_opcion">Constancia de Utilidades</a></li>
+                                <li><a href="#" class="submenu_opcion">Perfiles de Trabajo</a></li>
+                                <li><a href="#" class="submenu_opcion">Solicitudes/Consultas</a></li>
+                            </ul>
+                        </div>
+                        <div class="link"><a href="1" class="enlace_opcion"><img src="../img/service.svg" class="icono_anterior"> Bienestar Social</a><img src="../img/caret-down.svg" class="link_arrow"></div>
+                        <div class="link"><a href="2" class="enlace_opcion"><img src="../img/book.svg" class="icono_anterior"> Reglamentos</a><img src="../img/caret-down.svg" class="link_arrow"></div>
+                        <div class="link"><a href="3" class="enlace_opcion"><img src="../img/laws.svg" class="icono_anterior"> Otras Normas y Disposiciones</a><img src="../img/caret-down.svg" class="link_arrow"></div>
+                        <div class="link"><a href="4" class="enlace_opcion"><img src="../img/academic.svg" class="icono_anterior"> Capacitación</a><img src="../img/caret-down.svg" class="link_arrow"></div>
                     </div>
                 </div>
                 <div class="close_session">

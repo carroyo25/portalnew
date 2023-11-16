@@ -23,6 +23,7 @@ a{
         width: 1rem;
         height: 1rem;
         margin-right: .5rem;
+        pointer-events: none;
     }
 
     .link_arrow {
@@ -31,6 +32,7 @@ a{
         position: absolute;
         right: 0px;
         top: 15px;
+        transition: all .5s;
     }
 
     .left_side{
@@ -42,6 +44,7 @@ a{
             color: #fff;
             font-weight: bold;
             font-size: 0.9rem;
+            display: block;
         }
 
         .left_side_logo{
@@ -76,6 +79,24 @@ a{
 
                 .link {
                     position: relative;
+
+                    .submenu {
+                        background:#fff;
+                        list-style: none;
+                        border-radius: 8px;
+                        line-height: 2rem;
+                        display: none;
+
+                        .submenu_opcion{
+                            color: #000;
+                            display: block;
+
+
+                            &:hover{
+                                background:#c2c2c2;
+                            }
+                        }
+                    }
                 }
             }
         }
