@@ -17,50 +17,109 @@
             </div>
             <div class="left_side_options">
                 <div class="left_side_home">
-                    <p><a href="#" class="enlace_opcion"><img src="../img/home.svg" class="icono_anterior">Inicio</a></p>
+                    <img src="../img/inicio.svg">
+                    <a href="#" class="enlace_opcion">Inicio</a>
                 </div>
-                <div class="left_side_acordeon">
-                    <p>Procesos</p>
-                    </br>
-                    <div id="acordeon">
-                        <div class="link" >
-                            <a href="0" class="enlace_opcion"><img src="../img/document.svg" class="icono_anterior"> Gestión de Documentos</a><img src="../img/caret-down.svg" class="link_arrow">
-                            <ul class="submenu">
-                                <li><a href="#" class="submenu_opcion">Boletas de Pago</a></li>
-                                <li><a href="#" class="submenu_opcion">Certificados de Trabajo</a></li>
-                                <li><a href="#" class="submenu_opcion">Constancia de CTS</a></li>
-                                <li><a href="#" class="submenu_opcion">Constancia de Utilidades</a></li>
-                                <li><a href="#" class="submenu_opcion">Perfiles de Trabajo</a></li>
-                                <li><a href="#" class="submenu_opcion">Solicitudes/Consultas</a></li>
-                            </ul>
-                        </div>
-                        <div class="link"><a href="1" class="enlace_opcion"><img src="../img/service.svg" class="icono_anterior"> Bienestar Social</a><img src="../img/caret-down.svg" class="link_arrow"></div>
-                        <div class="link"><a href="2" class="enlace_opcion"><img src="../img/book.svg" class="icono_anterior"> Reglamentos</a><img src="../img/caret-down.svg" class="link_arrow"></div>
-                        <div class="link"><a href="3" class="enlace_opcion"><img src="../img/laws.svg" class="icono_anterior"> Otras Normas y Disposiciones</a><img src="../img/caret-down.svg" class="link_arrow"></div>
-                        <div class="link"><a href="4" class="enlace_opcion"><img src="../img/academic.svg" class="icono_anterior"> Capacitación</a><img src="../img/caret-down.svg" class="link_arrow"></div>
-                    </div>
+                <div class="menu_acordeon">
+                    <p class="title__acordeon">Procesos</p>
+                    <nav class="nav">
+                        <ul class="list">
+                            <li class="list__item">
+                                <div class="list__button list__button--click">
+                                    <img src="../img/file.svg" class="list__img">
+                                    <a href="#" class="nav__link">Gestión de Documentos</a>
+                                    <img src="../img/arrow.svg" class="list__arrow">
+                                </div>
+                                <ul class="list__show">
+                                    <li class="list__inside"><a href="#" class="nav__link nav__link--inside">Boletas de Pago</a></li>
+                                    <li class="list__inside"><a href="#" class="nav__link nav__link--inside">Certificados de Trabajo</a></li>
+                                    <li class="list__inside"><a href="#" class="nav__link nav__link--inside">Constancia de CTS</a></li>
+                                    <li class="list__inside"><a href="#" class="nav__link nav__link--inside">Constancia de Utilidades</a></li>
+                                    <li class="list__inside"><a href="#" class="nav__link nav__link--inside">Perfil de Trabajo</a></li>
+                                    <li class="list__inside"><a href="#" class="nav__link nav__link--inside">Solicitudes/Consultas</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="list__item list__item--click">
+                                <div class="list__button list__button--click">
+                                    <img src="../img/service.svg" class="list__img">
+                                    <a href="#" class="nav__link">Bienestar Social</a>
+                                    <img src="../img/arrow.svg" class="list__arrow">
+                                </div>
+                                <ul class="list__show">
+                                    <li class="list__inside"><a href="#" class="nav__link nav__link--inside">Planes de Salud</a></li>
+                                    <li class="list__inside"><a href="#" class="nav__link nav__link--inside">Noticias</a></li>
+                                    <li class="list__inside"><a href="#" class="nav__link nav__link--inside">Boletín de Salud</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="list__item">
+                                <div class="list__button">
+                                    <img src="../img/document.svg" class="list__img">
+                                    <a href="#" class="nav__link">Reglamentos</a>
+                                </div>
+                            </li>
+
+                            <li class="list__item list__item--click">
+                                <div class="list__button list__button--click">
+                                    <img src="../img/inbox.svg" class="list__img">
+                                    <a href="#" class="nav__link">Otras Normas y Disposiciones</a>
+                                    <img src="../img/arrow.svg" class="list__arrow">
+                                </div>
+                                <ul class="list__show">
+                                    <li class="list__inside"><a href="#" class="nav__link nav__link--inside">Pólitica Salarial</a></li>
+                                    <li class="list__inside"><a href="#" class="nav__link nav__link--inside">Código de Etica</a></li>
+                                    <li class="list__inside"><a href="#" class="nav__link nav__link--inside">PSPC Inv. y sanción del Hostigamiento Sexual</a></li>
+                                    <li class="list__inside"><a href="#" class="nav__link nav__link--inside">Política de Alcohol y Drogas</a></li>
+                                    <li class="list__inside"><a href="#" class="nav__link nav__link--inside">Boletín AFP/ONP</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="list__item">
+                                <div class="list__button">
+                                    <img src="../img/teach.svg" class="list__img">
+                                    <a href="#" class="nav__link">Capacitación</a>
+                                </div>
+                            </li>
+
+                            <li class="list__item">
+                                <div class="list__button">
+                                    <img src="../img/elementor.svg" class="list__img">
+                                    <a href="#" class="nav__link">Area Legal</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="close_session">
-                    <p><a href="#" class="enlace_opcion"><img src="../img/logout.svg" class="icono_anterior">Cerrar Sesión</a></p>
+                    <img src="../img/logout.svg">
+                    <a href="#" class="enlace_opcion">Cerrar Sesión</a>
                 </div>
             </div>
         </section>
         <section class="rigth_side">
             <div class="rigth_side_header">
                 <div class="document_rrhh">
-                    <a href="#">Hoja de Movimiento</a>
+                    <div class="file_options">
+                        <img src="../img/file.svg" alt="">
+                        <a href="#" class="enlace_blanco">Hoja de Movimiento</a>
+                    </div>
                 </div>
                 <div class="info">
                     <div class="info_header">
-                        <div class="notify1">C</div>
-                        <div class="notify2">N</div>
-                        <div class="notify3">A</div>
-                        <div class="notify4">O</div>
+                        <div class="notify">
+                            <img src="../img/email.svg" alt="">
+                            <a href="#" class="notify__number">1</a>
+                        </div>
+                        <div class="notify">
+                            <img src="../img/bell.svg" alt="">
+                            <a href="#" class="notify__number">1</a>
+                        </div>
                     </div>
                     <div class="info_user">
                         Usuario_ejemplo
                         <div class="user_img">
-                            OC
+                            <img src="../img/user.svg" class="user__icon">
                         </div>
                     </div>
                 </div>
@@ -68,7 +127,7 @@
             </div>
             <div class="work_area_rigth_side">
                 <div class="load_external">
-
+                    <?php include_once( '../php/noticias.php' ); ?>
                 </div>
             </div>
         </section>

@@ -1,40 +1,29 @@
 (function() {
-    const acordeon = document.getElementById('acordeon');
-    const link_arrow = document.getElementsByClassName('link_arrow');
-    const opciones = document.querySelectorAll('.enlace_opcion');
-    const submenu = document.querySelectorAll('.submenu');
+   const listElements = document.querySelectorAll('.list__button--click');
 
-    opciones.forEach(opcion  => {
-        let id = opcion.getAttribute("href");
+   listElements.forEach(listElement => {
+      listElement.addEventListener('click',()=>{
+         
+         //obtiene el numero de elementos del menu 
+         let options = listElements.length;
 
-        opcion.addEventListener("click",(e) =>{
-            e.preventDefault();
+         //limpia todos los elmnetos del menu
+         for (let i = 0; i < options; i++) {
+            listElements[i].classList.remove('arrow');
+            listElements[i].nextElementSibling.style.height = 0;   
+         }
 
-            for (let index = 0; index < link_arrow.length; index++) {
-                link_arrow[index].style.transform = "rotate(0deg)";
+         listElement.classList.toggle('arrow');
+
+         let height = 0,
+            menu = listElement.nextElementSibling;
+
+            if(menu.clientHeight == 0){
+               height = menu.scrollHeight;
             }
 
-            opcion.nextSibling.style.transform = "rotate(90deg)";
+            menu.style.height = `${height}px`;
+      })
+   })
 
-            submenu[id].style.display = "block";
-
-            return false;
-        })
-    });
-
-    /*const showMenu = (e) => {
-        e.preventDefault();
-        
-        const opcion = e.target;
-
-        
-
-        
-
-        return false
-    }*/
-
-    //acordeon.addEventListener("click", showMenu);
-
-    
 })()
